@@ -67,14 +67,31 @@ make_username(input("Enter first name: "), input("Enter family name: "))
 ## Part C: Bookend Swap Problem
 This function makes a function named `swap_bookends()` that accepts two elements and unpacks them into three variables, which are: first - the first element; middle - a list that contains the elements between the first and last elements; and last - the last element.
 
+The following methods were utilized in this function:
 
+A sample list was given: `items = [1,2,3,4,5,6]`
 
+Using manual slicing, relevant values from the list were assigned to their respective variables and displayed.
 ```python
+def swap_bookends(items): #defines the name of the function and the arbitrary variable that stores the elements 
+    
+    first = items[0] #takes the first element and assigns it to an arbitrary variable named "first"
+    middle = items [1:-1] #takes the second element to the second to the last element and assigns it to an arbitrary variable named "middle"
+    last = items [-1] #takes the last element and assigns it to an arbitrary variable named "last"
 
+    #switches the place of the first and last elements while maintaining the order of the middle element and assigns these to a new variable
+    newitems = last,*middle,first
+
+    #closes the function and outputs the contents of the new variable
+    return print (newitems)
+
+#calls and executes the user-defined fucntion
+swap_bookends([1,2,3,4,5,6])
 ```
 
+Thank you so much for taking the time to read!
 
 #### README File Version History:
 August 24, 2026 - Initial README output is uploaded
 
-August 26, 2026 - Revisions were made in the README file
+August 26, 2026 - Revisions were made in the README file, and the .ipynb file was attached
