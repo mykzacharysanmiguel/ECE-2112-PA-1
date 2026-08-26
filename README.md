@@ -50,3 +50,9 @@ This function makes a function named `swap_bookends()` that accepts two elements
 ```python
 
 ```
+
+
+#### README File Version History:
+August 24, 2026 - Initial README output is uploaded
+
+August 26, 2026 - Revisions were made in the README file
