@@ -9,7 +9,6 @@ The objective of this function, which we will name `rotate word()`, is to accept
 The following methods were utilized in this function:
 
 - `return` - this statement is used inside a function to exit the function and send a specified value back to the code that called it.
-- `input` - a built-in function used to capture text entered by a user using a keyboard.
 
 **string splicing** - this will allow us to extract a specific portion of a string using the syntax `string[start:stop:step]`. Where:
 - `start` - is the index where the slicing begins. It usually defaults to `0`, which is the index of the first letter.
@@ -24,12 +23,10 @@ The following methods were utilized in this function:
 With all of the functions discussed, the final function will look like this:
 ```python
 def rotate_word(z): #defines the function named "rotate_word" with an arbitrary variable "z"
+    return z[1::1] + z[0] #takes the first letter of the string and moves it to the end
 
-    #takes the first letter of the string and moves it to the end
-    return z[1::1] + z[0]
-
-#calls out the function and outputs the result of the said function
-print (rotate_word(input("Enter a word: ")))
+#calls out the funcion and outputs the result of the said function
+print (rotate_word("Python"))
 ```
 
 ## Part B: Username Builder Problem
@@ -49,7 +46,7 @@ example: `"I the best".replace("I","u")` ---> 'u the best'
 
 Now, in order to define and make our own function, we will use the given functions above to achieve the function that we want to make.
 ```python
-def make_username(first_name, last_name): #this defines the name of the function and the 2 variables that we will be using
+def make_username(first_name, last_name): #this defines the name of the function and the two variables that we will be using
 
     #makes all of the letters within the FIRST variable in lower case and removes all the spaces
     newfirst=first_name.lower().replace(" ","")
@@ -60,8 +57,8 @@ def make_username(first_name, last_name): #this defines the name of the function
     #this prints the new 1st and 2nd variables, seperated by a period
     return print(newfirst+"."+newlast)
 
-#calls out the function and lets us input the first name and the family name
-make_username(input("Enter first name: "), input("Enter family name: "))
+#calls out the function and displays the first name and the family name 
+make_username("Ana Maria","De Leon")
 ```
 
 ## Part C: Bookend Swap Problem
@@ -89,9 +86,11 @@ def swap_bookends(items): #defines the name of the function and the arbitrary va
 swap_bookends([1,2,3,4,5,6])
 ```
 
-Thank you so much for taking the time to read! If you wish to download the file, download it [here](https://github.com/mykzacharysanmiguel/ECE-2112-PA-1/blob/be7c400e24be3f0f23fc4a027c2404ff346773ec/Programming%20Assignment%201.ipynb)
+Thank you so much for taking the time to read! If you wish to download the file, download it [here](https://github.com/mykzacharysanmiguel/ECE-2112-PA-1/blob/fc320caaf14070587e4824b1ec7b6f03fb919c66/Programming%20Assignment%201.ipynb)
 
 #### README File Version History:
 August 24, 2026 - Initial README output is uploaded
 
 August 26, 2026 - Revisions were made in the README file, and the .ipynb file was attached
+
+August 27, 2026 - Final revisions were made in the .ipynb file as well as the README file
