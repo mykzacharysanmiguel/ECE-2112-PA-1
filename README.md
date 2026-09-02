@@ -94,3 +94,5 @@ August 24, 2026 - Initial README output is uploaded
 August 26, 2026 - Revisions were made in the README file, and the .ipynb file was attached
 
 August 27, 2026 - Final revisions were made in the .ipynb file as well as the README file
+
+September 2, 2026 - School year is corrected on Line 4 of the README file
